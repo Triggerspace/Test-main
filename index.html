@@ -3,50 +3,68 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<Style>
-.red{
-margin:10%;
-Width:80%;
-Height:200px;
-Background-color: green;
-Border-radius:30px 30px 30px 30px;
-Border:1px solid red;
+
+  <style>
+.register{
+Height:300px;
+Background-color:rgba(111,232,23,0.11);
 Box-sizing:border-box;
+Justify-content: center;
+Align-items: center;
+Font-size:20px;
+Padding-left:3%;
+Color: orange;
+} 
+#fill{
+Font-size:30px'';
+Font-weight:bold;
+Color: tomato;
+Background-color:#4657;
 }
-#Xed{
-Position: absolute;
-Top:20px;
-Right:160px;
-Text-align:center;
-Width:10%;
-Border-radius:50px 50px 50px 50px;
-Border:1px solid red;
-Transform:scale(2);
-Color:red;
-Background-color: green;
-Text-shadow:2px 1px 2px black;
+#red{
+Height:30px;
+Background-color:red;
+Font-weight:bold;
+Color: lime;
 }
-h2{
-color: red;
-text-shadow:2px 1px 2px black;
-Transform:scale(1.5);
+#green{
+Height:20px;
 }
-h3{
-Margin-top:40px;
-Transform:scale(2);
-color:red;
-Text-shadow:2px 1px 2px black;
-Font-style:italic;
+#grey{
+Height:20px;
 }
-</Style>
+#dark{
+Height:20px;
+}
+#orange{
+Height:20px;
+}
+  </style>
 </head>
 
 <body>
-<Div class="red">
-<h2><b><center>Alert</center></h2></b>
-<Hr color="red">
-<center><b><h3>You Are Robot</h3></b></center>
-<A href="css grid.html"><Div id="Xed">&times;</div></a>
-</body>
+<form  action="database.php"method="post">
+<div class="register">
+<Div id="fill">Login</div>
+<Iabel for="fname">First name:- </label></br>
+<Input type="text" name="user"id="green"required>
+<Br/>
 
+<Iabel for="lname">Last name:- </label><br/>
+<Input type="text" name="loser"id="grey"required>
+<br/>
+
+<Label for="email">Email ID:- </label><br/>
+<Input type="email" name="em"id="dark"required>
+<Br/>
+
+<Label for="num">Number:- </label><br/>
+<Input type="number" name="num"id="orange"required>
+<Br/>
+<Br/>
+<Input type="submit"value="Submit"id="red"name="sb">
+</div>
+</form>
+
+</body>
 </html>
